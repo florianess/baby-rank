@@ -34,7 +34,12 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          {children}
+          <SignedIn>
+            {children}
+          </SignedIn>
+          <SignedOut>
+            <h1>CONNECTE TOI</h1>
+          </SignedOut>
         </Providers>
       </body>
     </html>
